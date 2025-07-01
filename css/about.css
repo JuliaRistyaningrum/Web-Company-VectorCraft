@@ -1,0 +1,39 @@
+/* ============= ABOUT ========= */
+.about_vectorcraft {
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+}
+
+.about_vectorcraft-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1.5rem;
+}
+
+.about_vectorcraft-right {
+    margin-top: 1rem;
+}
+
+/* =============== MEDIA QUERIES ( TABLETS ) ======================= */
+@media screen and (max-width: 1024px) {
+    .about_vectorcraft {
+        margin-top: 2rem;
+    }
+
+    .about_vectorcraft-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+        padding: 0 1.5rem; 
+    }
+
+    .about_vectorcraft-left {
+        width: 100%;
+    }
+
+    .about_vectorcraft-right {
+        padding: 0 1rem;
+        text-align: center;
+    }
+}

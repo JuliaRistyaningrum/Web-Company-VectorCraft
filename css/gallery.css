@@ -1,0 +1,74 @@
+.glr {
+    text-align: center;
+    margin-top: 10rem;
+   
+}
+
+input {
+    display: none;
+}
+
+.tag{
+    font-size: 1.4rem;
+    margin: 1.5rem 0rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background-color: var(--color-bg2);
+    display: inline-block;
+    color: lightgray;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.images{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 0 auto;
+    padding: 20px;
+}
+.images img{
+    text-align: center;
+    border-radius: 10px;
+    width: 296px;
+    height: 300px;
+    transition: all .4s ease-in-out;
+}
+
+#dsg:checked ~ .images > img:not([class *="dsg"]){
+    width: 0px;
+    height: 0px;
+}
+
+/* =============== MEDIA QUERIES ( TABLETS ) ======================= */
+@media screen and (max-width: 1024px){
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* =============== MEDIA QUERIES ( PHONES ) ======================= */
+
+@media screen and (max-width: 600px){
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+}
